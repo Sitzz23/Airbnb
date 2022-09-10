@@ -1,9 +1,7 @@
 import React from "react";
 import Globe from "./assets/svg/globe.svg";
-import Drawer from "./components/Drawer";
 
-function Footer() {
-    const [isOpen, setIsOpen] = React.useState(false);
+function Footer({ setIsOpen }) {
     return (
         <div className=' text-sm first:w-screen border-t p-[14px] border-zinc-200 px-[5rem] flex justify-between font-light'>
             <div className='flex'>
@@ -38,9 +36,6 @@ function Footer() {
                 <p>₹ INR</p>
                 <p>Support & Resources</p>
             </div>
-            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-                <div>seorfnviuonr</div>
-            </Drawer>
         </div>
     );
 }
