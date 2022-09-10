@@ -67,7 +67,7 @@ export default function Tabs() {
                             key={category}
                             className={({ selected }) =>
                                 (classNames =
-                                    "w-full p-1 text-sm font-medium hover:bg-zinc-100 transition rounded-full leading-5 text-[rgb(40,40,40)] ")
+                                    "w-full p-1 font-medium text-sm hover:bg-zinc-100 transition rounded-full leading-5 text-[rgb(40,40,40)] ")
                             }
                         >
                             {category}
