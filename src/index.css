@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+    font-family: "bold";
+    src: url("./assets/font/bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "book";
+    src: url("./assets/font/book.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "med";
+    src: url("./assets/font/med.woff2") format("woff2");
+}
+
 @tailwind utilities;
