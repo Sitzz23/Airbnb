@@ -16,4 +16,12 @@
     src: url("./assets/font/med.woff2") format("woff2");
 }
 
+
+@font-face {
+    font-family: "logo";
+    src: url("./assets/font/name.woff2") format("woff2");
+}
+
+
+
 @tailwind utilities;
