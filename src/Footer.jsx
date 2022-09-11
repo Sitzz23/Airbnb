@@ -28,13 +28,13 @@ function Footer({ setIsOpen }) {
                     </button>
                 </div>
             </div>
-            <div className='flex font-medium gap-5'>
+            <div className='flex font-medium gap-5 tracking-[.2px]'>
                 <div className='flex gap-2'>
                     <img src={Globe} width='18px' />
                     <p>English(IN)</p>
                 </div>
                 <p>₹ INR</p>
-                <p>Support & Resources</p>
+                <p>Support & resources</p>
             </div>
         </div>
     );
