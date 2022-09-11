@@ -25,7 +25,7 @@ function Navbar({ setIsOpen }) {
                 >
                     <img src={Globe} width='18px' />
                 </div>
-                <div className='ml-3'>
+                <div className='ml-3 '>
                     <Log />
                 </div>
             </div>

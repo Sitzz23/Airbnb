@@ -37,8 +37,8 @@ function Pagination() {
     ];
 
     return (
-        <nav aria-label='Page navigation example' className='px-[5rem] '>
-            <ul className='inline-flex items-center w-full justify-between gap-6 font-book font-black'>
+        <nav className='px-[5rem] '>
+            <ul className='flex items-center w-full justify-between gap-6 font-book font-black'>
                 <li>
                     <a
                         href='#'
@@ -89,7 +89,7 @@ function Pagination() {
                         href='#'
                         className='block p-1 leading-tight bg-white rounded-full border border-zinc-400 hover:shadow-md transition'
                     >
-                        <span className='sr-only'>Next</span>
+                        <span className='sr-only '>Next</span>
                         <svg
                             aria-hidden='true'
                             className='w-5 h-5'

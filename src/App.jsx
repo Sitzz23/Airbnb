@@ -10,14 +10,14 @@ function App() {
     const [isOpen, setIsOpen] = React.useState(false);
     return (
         <div>
-            <div className='sticky top-0 w-screen'>
+            <div className=' w-screen'>
                 <Navbar setIsOpen={setIsOpen} />
             </div>
 
             <div className='fixed -translate-x-1/2 left-1/2 top-[14px]'>
                 <Tabs />
             </div>
-            <div className='sticky top-20 mt-4'>
+            <div className=' mt-4 text-right'>
                 <Pagination />
             </div>
 

@@ -5,7 +5,7 @@ import { Bars3Icon, UserCircleIcon } from "@heroicons/react/24/solid";
 
 export default function Log() {
     return (
-        <div className='text-right font-book'>
+        <div className='text-right font-book bg-'>
             <Menu as='div' className='relative inline-block text-left'>
                 <div>
                     <Menu.Button className=' rounded-full border-[1px] p-1 hover:shadow-md transition'>
@@ -30,7 +30,7 @@ export default function Log() {
                     leaveFrom='transform opacity-100 scale-100'
                     leaveTo='transform opacity-0 scale-95'
                 >
-                    <Menu.Items className='absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-200 rounded-xl overflow-clip bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+                    <Menu.Items className='absolute z-50 right-0 mt-2 w-56 origin-top-right divide-y divide-gray-200 rounded-xl overflow-clip bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
                         <div className='py-2 '>
                             <Menu.Item>
                                 {({ active }) => (
@@ -62,20 +62,22 @@ export default function Log() {
                         <div className='py-2'>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <button
+                                    <a
+                                        href='https://www.airbnb.co.in/host/homes'
                                         className={`${
                                             active
                                                 ? "bg-zinc-100 "
-                                                : "text-gray-600"
-                                        } group flex w-full items-center px-5 font-book py-2  text-sm`}
+                                                : "text-gray-600  "
+                                        } group flex w-full items-center px-5 font-book py-2  text-sm `}
                                     >
                                         Host your home
-                                    </button>
+                                    </a>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <button
+                                    <a
+                                        href='https://www.airbnb.co.in/host/experiences?from_nav=1'
                                         className={`${
                                             active
                                                 ? "bg-zinc-100 "
@@ -83,12 +85,13 @@ export default function Log() {
                                         } group flex w-full items-center px-5 font-book py-2  text-sm`}
                                     >
                                         Host an experience
-                                    </button>
+                                    </a>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <button
+                                    <a
+                                        href='https://www.airbnb.co.in/help?audience=guest'
                                         className={`${
                                             active
                                                 ? "bg-zinc-100 "
@@ -96,7 +99,7 @@ export default function Log() {
                                         } group flex w-full items-center px-5 font-book py-2  text-sm`}
                                     >
                                         Help
-                                    </button>
+                                    </a>
                                 )}
                             </Menu.Item>
                         </div>
