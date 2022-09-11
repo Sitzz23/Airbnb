@@ -1,0 +1,15 @@
+export { default as Pools } from "./pools.png";
+export { default as Views } from "./views.png";
+export { default as Arctic } from "./arctic.png";
+export { default as Beaches } from "./beaches.png";
+export { default as Boats } from "./boats.png";
+export { default as Camp } from "./camp.png";
+export { default as Iconic } from "./iconic.png";
+export { default as Islands } from "./islands.png";
+export { default as Lake } from "./lake.png";
+export { default as Luxe } from "./luxe.png";
+export { default as Npark } from "./npark.png";
+export { default as Omg } from "./omg.png";
+export { default as Ski } from "./skiing.png";
+export { default as Surf } from "./surf.png";
+export { default as Tropical } from "./tropical.png";
