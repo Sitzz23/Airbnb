@@ -2,8 +2,10 @@ import React from "react";
 import Logo from "./assets/icons/logo.svg";
 import Globe from "./assets/svg/globe.svg";
 import Log from "./components/Log";
+import Signup from "./components/Signup";
 
 function Navbar({ setIsOpen }) {
+     const [issOpen, setIssOpen] = React.useState(false);
     return (
         <div className='md:py-4 flex justify-between text-[rgb(40,40,40)] border-b border-zinc-200 px-[5rem] '>
             <div className='flex gap-1'>
@@ -26,9 +28,10 @@ function Navbar({ setIsOpen }) {
                     <img src={Globe} width='18px' />
                 </div>
                 <div className='ml-3 '>
-                    <Log />
+                    <Log setIssOpen={setIssOpen} />
                 </div>
             </div>
+            <Signup issOpen={issOpen} setIssOpen={setIssOpen} />
         </div>
     );
 }

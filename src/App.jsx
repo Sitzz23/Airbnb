@@ -6,8 +6,11 @@ import Footer from "./Footer";
 import Drawer from "./components/Drawer";
 import Pagination from "./components/Pagination";
 
+
 function App() {
     const [isOpen, setIsOpen] = React.useState(false);
+   
+
     return (
         <div>
             <div className=' w-screen'>
@@ -24,9 +27,9 @@ function App() {
             <div className='fixed -translate-x-1/2 left-1/2 bottom-0'>
                 <Footer setIsOpen={setIsOpen} />
             </div>
-            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-                Hemlo
-            </Drawer>
+            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}/>
+               
+           
         </div>
     );
 }
