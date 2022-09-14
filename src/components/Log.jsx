@@ -2,7 +2,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { Bars3Icon, UserCircleIcon } from "@heroicons/react/24/solid";
 
-export default function Log({setIssOpen}) {
+export default function Log({ setIssOpen }) {
     return (
         <div className='text-right font-book bg-'>
             <Menu as='div' className='relative inline-block text-left'>
@@ -48,6 +48,7 @@ export default function Log({setIssOpen}) {
                             <Menu.Item>
                                 {({ active }) => (
                                     <button
+                                        onClick={() => setIssOpen(true)}
                                         className={`${
                                             active
                                                 ? "bg-zinc-100 "
