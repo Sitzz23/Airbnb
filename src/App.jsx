@@ -27,7 +27,7 @@ function App() {
                 <Footer setIsOpen={setIsOpen} />
             </div>
             <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
-            <div className='px-[5rem] pt-4' >
+            <div className='px-[7rem] pt-4' >
                 <Carousel />
             </div>
         </div>

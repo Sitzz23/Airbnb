@@ -65,7 +65,7 @@ function SamplePrevArrow(props) {
             onClick={onClick}
         >
             {" "}
-            <a className='leading-tight p-1 bg-white absolute left-0 -top-2 rounded-full border border-zinc-400 hover:shadow-md transition'>
+            <a className='leading-tight p-1 bg-white absolute -left-2 -top-2 rounded-full border border-zinc-400 hover:shadow-md transition'>
                 <span className='sr-only'>Previous</span>
                 <svg
                     aria-hidden='true'
@@ -109,13 +109,13 @@ export default class CustomArrows extends Component {
             dots: false,
             infinite: false,
             slidesToShow: 12,
-            slidesToScroll: 6,
+            slidesToScroll: 5,
             nextArrow: <SampleNextArrow />,
             prevArrow: <SamplePrevArrow />,
         };
         return (
             <div>
-                <Slider {...settings}>
+                <Slider {...settings} >
                     <div>
                         <li className='hover:border-zinc-300 border-b-2 opacity-60 hover:opacity-100 transition-all border-transparent py-3 flex flex-col justify-items-center gap-3'>
                             <img src={Omg} width='25px' className='mx-auto ' />
@@ -214,6 +214,62 @@ export default class CustomArrows extends Component {
                             />
                             <p className='text-xs text-zinc-500 tracking-[0.02em]'>
                                 Tropical
+                            </p>
+                        </li>
+                    </div>
+                    <div>
+                        <li className='hover:border-zinc-300 border-b-2 opacity-60 hover:opacity-100 transition-all border-transparent py-3 flex flex-col justify-items-center gap-3'>
+                            <img src={Camp} width='25px' className='mx-auto ' />
+                            <p className='text-xs text-zinc-500 tracking-[0.02em]'>
+                                Camping
+                            </p>
+                        </li>
+                    </div>
+                    <div>
+                        <li className='hover:border-zinc-300 border-b-2 opacity-60 hover:opacity-100 transition-all border-transparent py-3 flex flex-col justify-items-center gap-3'>
+                            <img
+                                src={Boats}
+                                width='25px'
+                                className='mx-auto '
+                            />
+                            <p className='text-xs text-zinc-500 tracking-[0.02em]'>
+                                Boats
+                            </p>
+                        </li>
+                    </div>
+                    <div>
+                        <li className='hover:border-zinc-300 border-b-2 opacity-60 hover:opacity-100 transition-all border-transparent py-3 flex flex-col justify-items-center gap-3'>
+                            <img
+                                src={Iconic}
+                                width='25px'
+                                className='mx-auto '
+                            />
+                            <p className='text-xs text-zinc-500 tracking-[0.02em]'>
+                                Iconic Sites
+                            </p>
+                        </li>
+                    </div>
+                    <div>
+                        <li className='hover:border-zinc-300 border-b-2 opacity-60 hover:opacity-100 transition-all border-transparent py-3 flex flex-col justify-items-center gap-3'>
+                            <img src={Lake} width='25px' className='mx-auto ' />
+                            <p className='text-xs text-zinc-500 tracking-[0.02em]'>
+                                Lakes
+                            </p>
+                        </li>
+                    </div>
+                    <div>
+                        <li className='hover:border-zinc-300 border-b-2 opacity-60 hover:opacity-100 transition-all border-transparent py-3 flex flex-col justify-items-center gap-3'>
+                            <img src={Surf} width='25px' className='mx-auto ' />
+                            <p className='text-xs text-zinc-500 tracking-[0.02em]'>
+                                Surfing
+                            </p>
+                        </li>
+                    </div>
+                    <div>
+                        <li className='hover:border-zinc-300 border-b-2 opacity-60 hover:opacity-100 transition-all border-transparent py-3 flex flex-col justify-items-center gap-3'>
+                            <img src={Luxe} width='25px' className='mx-auto ' />
+                            <p className='text-xs text-zinc-500 tracking-[0.02em]'>
+                                Luxe
                             </p>
                         </li>
                     </div>
