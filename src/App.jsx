@@ -17,7 +17,7 @@ function App() {
                 <Navbar setIsOpen={setIsOpen} />
             </div>
 
-            <div className='fixed -translate-x-1/2 left-1/2 top-[14px]'>
+            <div className='fixed -translate-x-1/2 left-1/2 top-[14px] z-20'>
                 <Tabs />
             </div>
             {/* <div className=' mt-4 text-right'>

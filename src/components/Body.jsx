@@ -149,8 +149,8 @@ function Body() {
     ];
 
     return (
-        <main className='px-[5rem]'>
-            <div class='grid grid-cols-4 gap-6 my-4 overflow-hidden '>
+        <main className='px-[5rem] mb-14'>
+            <div class='grid gap-6 my-4 overflow-hidden grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'>
                 {Hotel.map((hotel) => {
                     return (
                         <div

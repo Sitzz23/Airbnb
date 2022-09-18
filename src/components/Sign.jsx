@@ -78,7 +78,7 @@ function Sign() {
                         </p>
                     </div>
                 </div>
-                <div className='grad w-full text-center font-med text-white my-2 p-3 rounded-lg'>
+                <div className='grad w-full text-center font-med text-white my-2 p-3 rounded-lg cursor-pointer'>
                     Continue
                 </div>
                 <div className='py-4 relative'>
@@ -88,17 +88,17 @@ function Sign() {
                     </span>
                 </div>
                 <div className='flex flex-col gap-4 py-4'>
-                    <div className='border border-black text-sm  w-full text-center font-med text-black  p-3 rounded-lg'>
-                        Continue
+                    <div className='border border-black text-sm w-full text-center font-med text-black cursor-pointer p-3 rounded-lg'>
+                        Continue with Facebook
                     </div>
-                    <div className='border border-black text-sm  w-full text-center font-med text-black  p-3 rounded-lg'>
-                        Continue
+                    <div className='border border-black text-sm  w-full text-center font-med text-black cursor-pointer p-3 rounded-lg'>
+                        Continue with Google
                     </div>
-                    <div className='border border-black text-sm  w-full text-center font-med text-black  p-3 rounded-lg'>
-                        Continue
+                    <div className='border border-black text-sm  w-full text-center font-med text-black cursor-pointer p-3 rounded-lg'>
+                        Continue with Apple
                     </div>
-                    <div className='border border-black text-sm  w-full text-center font-med text-black  p-3 rounded-lg'>
-                        Continue
+                    <div className='border border-black text-sm  w-full text-center font-med text-black cursor-pointer p-3 rounded-lg'>
+                        Continue with Email
                     </div>
                 </div>
             </div>
