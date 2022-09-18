@@ -120,16 +120,19 @@ export default class CustomArrows extends Component {
                         return (
                             <div
                                 key={spots.id}
-                                className='hover:border-zinc-300 border-b-2 opacity-60 hover:opacity-100 transition-all border-transparent py-3 flex flex-col justify-items-center gap-3'
+                                className=' opacity-[.65] hover:opacity-100   flex flex-col justify-items-center '
                             >
-                                <img
-                                    src={spots.img}
-                                    width='25px'
-                                    className='mx-auto '
-                                />
-                                <p className='text-xs text-zinc-500 tracking-[0.02em]'>
-                                    {spots.name}
-                                </p>
+                                <div className='hover:border-zinc-300 border-b-2 transition-all border-transparent my-2 w-fit mx-auto '>
+                                    {" "}
+                                    <img
+                                        src={spots.img}
+                                        width='25px'
+                                        className='mx-auto '
+                                    />
+                                    <p className='text-xs font-med  text-black tracking-[0.02em] p-2.5 w-fit mx-auto '>
+                                        {spots.name}
+                                    </p>
+                                </div>
                             </div>
                         );
                     })}
