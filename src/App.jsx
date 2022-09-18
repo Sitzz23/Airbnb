@@ -4,8 +4,9 @@ import Navbar from "./Navbar";
 import Tabs from "./components/Tabs";
 import Footer from "./Footer";
 import Drawer from "./components/Drawer";
-import Pagination from "./components/Pagination";
+//import Pagination from "./components/Pagination";
 import Carousel from "./components/Carousel";
+import Body from "./components/Body";
 
 function App() {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -27,8 +28,11 @@ function App() {
                 <Footer setIsOpen={setIsOpen} />
             </div>
             <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
-            <div className='px-[7rem] pt-4' >
+            <div className='px-[7rem] py-4' >
                 <Carousel />
+            </div>
+            <div>
+                <Body/>
             </div>
         </div>
     );

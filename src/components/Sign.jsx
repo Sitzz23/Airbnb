@@ -51,17 +51,17 @@ function Sign() {
                     </span>
                 </div>
                 <div className='text-left relative'>
-                    <div class='relative'>
-                        <div class='relative '>
+                    <div className='relative'>
+                        <div className='relative '>
                             <input
                                 type='text'
                                 id='floating_outlined'
-                                class='block px-2.5 pb-3 pt-5 w-full text-sm text-gray-900 bg-transparent border-t-0 rounded-b-lg border-1 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer'
+                                className='block px-2.5 pb-3 pt-5 w-full text-sm text-gray-900 bg-transparent border-t-0 rounded-b-lg border-1 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-gray-400 peer'
                                 placeholder=' '
                             />
                             <label
                                 for='floating_outlined'
-                                class='absolute font-light text-sm text-gray-500 dark:text-gray-400 duration-200 transform -translate-y-2 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-gray-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-[.80] peer-focus:-translate-y-[8px] left-1'
+                                className='absolute font-light text-sm text-gray-500 dark:text-gray-400 duration-200 transform -translate-y-2 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-gray-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-[.80] peer-focus:-translate-y-[8px] left-1'
                             >
                                 Phone Number
                             </label>
