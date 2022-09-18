@@ -7,7 +7,7 @@ import Signup from "./components/Signup";
 function Navbar({ setIsOpen }) {
      const [issOpen, setIssOpen] = React.useState(false);
     return (
-        <div className='md:py-4 flex justify-between text-[rgb(40,40,40)] border-b border-zinc-200 px-[5rem] '>
+        <div className='md:py-4 flex justify-between text-[rgb(40,40,40)]  px-[5rem] '>
             <div className='flex gap-1'>
                 <img src={Logo} width='40px' />
                 <div className='font-logo text-[#ff395d] text-2xl self-center'>

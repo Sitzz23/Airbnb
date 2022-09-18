@@ -1,35 +1,72 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
+import Ab from "../assets/images/ab.jpg";
 
 function Card() {
+    // const [images, setImages] = useState([]);
+
+    useEffect(() => {
+        const apiRoot = "https://api.unsplash.com";
+        const accessKey = import.meta.env.VITE_ACCESSKEY;
+
+        axios.get(
+            `${apiRoot}/search/photos?page=1&query=resorts&client_id=${accessKey}`
+        );
+        //.then((res) => setImages([...images, ...res.data]));
+    }, []);
+
+    const Hotel = [
+        {
+            id: 1,
+            name: "Abiansemal",
+            country: "Indonesia",
+            distance: "4,548 kilometers",
+            dates: "13-20 Apr",
+            rates:"₹27,081"
+        },
+        { id: 2, name: "", country: "", distance: "", dates: "" },
+        { id: 3, name: "", country: "", distance: "", dates: "" },
+        { id: 4, name: "", country: "", distance: "", dates: "" },
+        { id: 5, name: "", country: "", distance: "", dates: "" },
+        { id: 6, name: "", country: "", distance: "", dates: "" },
+        { id: 7, name: "", country: "", distance: "", dates: "" },
+        { id: 8, name: "", country: "", distance: "", dates: "" },
+        { id: 9, name: "", country: "", distance: "", dates: "" },
+        { id: 10, name: "", country: "", distance: "", dates: "" },
+        { id: 11, name: "", country: "", distance: "", dates: "" },
+        { id: 12, name: "", country: "", distance: "", dates: "" },
+        { id: 13, name: "", country: "", distance: "", dates: "" },
+        { id: 14, name: "", country: "", distance: "", dates: "" },
+        { id: 15, name: "", country: "", distance: "", dates: "" },
+        { id: 16, name: "", country: "", distance: "", dates: "" },
+    ];
+
     return (
         <div>
-            <div class='max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>
-                <a href='#'>
-                    <img
-                        class='rounded-lg'
-                        src=''
-                        alt=''
-                    />
-                </a>
-                <div class='p-5'>
-                    <a href='#'>
-                        <h5 class='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                            Noteworthy technology acquisitions 2021
-                        </h5>
-                    </a>
-                    <p class='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-                        Here are the biggest enterprise technology acquisitions
-                        of 2021 so far, in reverse chronological order.
-                    </p>
-                    <a
-                        href='#'
-                        class='inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
-                    >
-                        Read more
-                    </a>
-                </div>
-            </div>
+            {Hotel.map((hotel) => {
+                return (
+                    <div className='text-left' key={hotel.id}>
+                        <a href='#'>
+                            <img className='rounded-xl' src={Ab} alt='ghar' />
+                        </a>
+                        <div className='py-2'>
+                            <h5 className=' font-med  text-gray-900 '>
+                                {hotel.name},&nbsp;{hotel.country}
+                            </h5>
+                            <p className=' text-zinc-500 text-sm font-light'>
+                                {hotel.distance}
+                            </p>
+                            <p className=' text-zinc-500 text-sm font-light'>
+                                {hotel.dates}
+                            </p>
+                        </div>
+                        <div className='text-gray-900 text-sm'>
+                            <span className='font-med '>{hotel.rates}</span>
+                            &nbsp;night
+                        </div>
+                    </div>
+                );
+            })}
         </div>
     );
 }

@@ -107,8 +107,8 @@ export default class CustomArrows extends Component {
 
         const settings = {
             dots: false,
-            infinite: false,
-            slidesToShow: 10,
+            infinite: true,
+            slidesToShow: 11,
             slidesToScroll: 5,
             nextArrow: <SampleNextArrow />,
             prevArrow: <SamplePrevArrow />,
@@ -120,7 +120,7 @@ export default class CustomArrows extends Component {
                         return (
                             <div
                                 key={spots.id}
-                                className=' opacity-[.65] hover:opacity-100   flex flex-col justify-items-center '
+                                className=' opacity-50 hover:opacity-100   flex flex-col justify-items-center '
                             >
                                 <div className='hover:border-zinc-300 border-b-2 transition-all border-transparent my-2 w-fit mx-auto '>
                                     {" "}
